@@ -1,0 +1,23 @@
+:root{
+    --primary-color:  #3498db;
+    --secondary-color:  #f39c12 ;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+.primaryButton{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    height: 50px;
+    margin-top: 12px;
+    margin-bottom: 28px;
+}    
