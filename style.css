@@ -11,14 +11,28 @@
     --lg: 18px;
 }
 
-body {
+body,html {
     margin: 0;
     padding: 0;
-    background-size: cover;
-    animation: transition 20s alternate infinite;
+    width: 100%;
+    height: 100vh;
 }
+
+/* backgrounds */
+.background-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(./imgs/fot14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 20s infinite ease-in-out;
+    z-index: -1;
+}
+
     
-#main_container{
+.main-container{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -27,10 +41,18 @@ body {
     justify-content: space-evenly;
 }
 
-#logo {
-    padding: 12px;
+.main-container span {
+    margin: 0 20px;
+    padding: 4px;
     background-color: var(--lite-gray);
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow:  1px 10px 25px rgba(0,0,0,0.5);
+}
+
+#logo {
+    padding: 8px;
+    background-color: var(--lite-gray);
+    border-radius: 12px;
     box-shadow:  1px 10px 25px rgba(0,0,0,0.5);
 }
 
@@ -49,6 +71,8 @@ body {
     box-shadow:  1px 10px 25px rgba(0,0,0,0.5);
 }
 
+
+/* section: footer */
 .footer {
     background-color: var(--dark);
     text-align: center;
@@ -65,62 +89,30 @@ body {
     margin-bottom: 4px;
 }
 
-.social-media-btn {
-    
-}
-
-.copyright {
-    text-align: center;
-    padding: 3px;
-    background-color: rgba(0, 0, 0, 0.2)
-}
-
 /* animations */
-@keyframes transition {
-    /* first frame */
-    0%, 17% {
-        background-image: url(./imgs/fot57.jpg);
-    }
-
-    /* second frame */
-    18%, 19% {
-        opacity: 0.5;
-        transition: 1s;
-    }
-
-    20%, 37% {
-        background-image: url(./imgs/fot37.jpg);
-    }
-
-    38%, 39% {
-        opacity: 1;
-        transition: 1s;
-    }
-
-    40%, 57% {
+@keyframes change{
+    0%
+    {
         background-image: url(./imgs/fot14.jpg);
     }
-    
-    58%, 59% {
-        opacity: 1;
-        transition: 1s;
+    20%
+    {
+        background-image: url(./imgs/fot37.jpg);
     }
-
-    60%, 77% {
+    40%
+    {
         background-image: url(./imgs/fot27.jpg);
     }
-
-    78%, 79% {
-        opacity: 1;
-        transition: 1s;
-    }
-
-    80%, 97% {
+    60%
+    {
         background-image: url(./imgs/fot57.jpg);
     }
-
-    98%, 100% {
-        opacity: 1;
-        transition: 1s;
+    80%
+    {
+        background-image: url(./imgs/fot28.jpg);
+    }
+    100%
+    {
+        background-image: url(./imgs/fot6.jpg);
     }
 }
