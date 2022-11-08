@@ -1,6 +1,6 @@
 
 :root{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Arial', sans-serif;
     --primary-color:  #3498db;
     --secondary-color:  #f39c12 ;
     --white: #FFFFFF;
@@ -27,23 +27,6 @@ body,html {
     height: 100%;
     background-size: cover;
 }
-    /* background-image: url(./imgs/fot14.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 5s; */
-
-    /* animation */
-    /* animation-name: background;
-    animation-direction: alternate-reverse;
-    animation-duration: 20s;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; */
-
-    /* animation: background 30s infinite ease-out; */
-/* } */
 
 .slider {
     position: absolute;
@@ -68,7 +51,8 @@ body,html {
 .slider img{
     background-size: cover;
 }
-    
+
+/* element container */
 .element-container {
     position: absolute;
     width: 100%;
@@ -109,6 +93,41 @@ body,html {
     margin-top: 12px;
     margin-bottom: 28px;
     box-shadow:  1px 10px 25px rgba(0,0,0,0.5);
+}
+
+/* footer */
+.footer-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer {
+    background-color: var(--dark);
+    text-align: center;
+    position: relative;
+}
+
+/* section: social media */
+.social_media {
+    display: grid;
+    padding: 4px;
+    padding-bottom: 0;
+}
+
+.social_media section {
+    margin-bottom: 4px;
+}
+
+/* section: copyright */
+
+.copyright {
+    font-size: smaller;
+    font-style: var(--white);
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 /* animations */
