@@ -1,23 +1,126 @@
 :root{
+    font-family: 'Quicksand', sans-serif;
     --primary-color:  #3498db;
     --secondary-color:  #f39c12 ;
     --white: #FFFFFF;
+    --lite-gray: #F7F7F7;
+    --dark: #232830;
     --black: #000000;
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
 }
 
-.primaryButton{
-    background-color: var(--primary-color);
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    animation: transition 20s alternate infinite;
+}
+    
+#main_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-evenly;
+}
+
+#logo {
+    padding: 12px;
+    background-color: var(--lite-gray);
+    border-radius: 8px;
+    box-shadow:  1px 10px 25px rgba(0,0,0,0.5);
+}
+
+#primary_btn{
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 8px;
     color: var(--white);
-    width: 100%;
     cursor: pointer;
     font-size: var(--sm);
     font-weight: bold;
     height: 50px;
+    width: 50%;
     margin-top: 12px;
     margin-bottom: 28px;
-}    
+    box-shadow:  1px 10px 25px rgba(0,0,0,0.5);
+}
+
+.footer {
+    background-color: var(--dark);
+    text-align: center;
+    font-style: var(--white);
+}
+
+.social_media{
+    display: grid;
+    padding: 4px;
+    padding-bottom: 0;
+}
+
+.social_media section {
+    margin-bottom: 4px;
+}
+
+.social-media-btn {
+    
+}
+
+.copyright {
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+/* animations */
+@keyframes transition {
+    /* first frame */
+    0%, 17% {
+        background-image: url(./imgs/fot57.jpg);
+    }
+
+    /* second frame */
+    18%, 19% {
+        opacity: 0.5;
+        transition: 1s;
+    }
+
+    20%, 37% {
+        background-image: url(./imgs/fot37.jpg);
+    }
+
+    38%, 39% {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    40%, 57% {
+        background-image: url(./imgs/fot14.jpg);
+    }
+    
+    58%, 59% {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    60%, 77% {
+        background-image: url(./imgs/fot27.jpg);
+    }
+
+    78%, 79% {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    80%, 97% {
+        background-image: url(./imgs/fot57.jpg);
+    }
+
+    98%, 100% {
+        opacity: 1;
+        transition: 1s;
+    }
+}
