@@ -133,10 +133,10 @@ body,html {
 /* animations */
 @keyframes slider {
     0%{margin-left: -0%;}
-    25%{margin-left: -300%;}
-    50%{margin-left: -600%;}
-    75%{margin-left: -900%;}
-    100%{margin-left: -1100%;}
+    25%{margin-left: -225%;}
+    50%{margin-left: -450%;}
+    75%{margin-left: -675%;}
+    100%{margin-left: -900%;}
 }
 
 @media only screen and (min-width:320px) and (max-width:768px){
